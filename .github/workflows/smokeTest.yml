@@ -1,4 +1,4 @@
-name: Lambda Ecom Test Report
+name: LambdaTest Ecom Smoke Test Report
 on:
   push:
     branches: [ main ]
@@ -23,7 +23,7 @@ jobs:
           cache: 'maven'
 
       - name: Run tests
-        run: mvn clean test -Denv=suite
+        run: mvn clean test -Denv=dev -Dsuite=smokeSuite
 
       - name: Git allure history
         uses: actions/checkout@v4
