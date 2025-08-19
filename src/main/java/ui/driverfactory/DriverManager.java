@@ -55,9 +55,9 @@ public class DriverManager {
     private WebDriver createLocalDriver(BrowserType browserType) {
         switch (browserType) {
             case CHROME -> {
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--user-data-dir=/tmp/chrome-profile-" + UUID.randomUUID(), "--start-maximized");
-                return new ChromeDriver(options);
+                // options = new ChromeOptions();
+                //options.addArguments("--user-data-dir=/tmp/chrome-profile-" + UUID.randomUUID(), "--start-maximized");
+                return new ChromeDriver();
             }
             case FIREFOX -> {
                 FirefoxOptions options = new FirefoxOptions();
