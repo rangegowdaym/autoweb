@@ -14,6 +14,7 @@ import utils.ConfigReader;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.UUID;
 
 public class DriverManager {
     private static DriverManager instance;
@@ -55,7 +56,7 @@ public class DriverManager {
         switch (browserType) {
             case CHROME -> {
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis(), "--start-maximized");
+                options.addArguments("--user-data-dir=/tmp/chrome-profile-" + UUID.randomUUID(), "--start-maximized");
                 return new ChromeDriver(options);
             }
             case FIREFOX -> {
