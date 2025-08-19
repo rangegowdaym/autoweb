@@ -1,0 +1,1 @@
+Logout button is displayed, user is logged in

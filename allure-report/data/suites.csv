@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","21235","Successful registration with valid details","","Mon Aug 18 21:49:30 IST 2025","passed","Mon Aug 18 21:49:51 IST 2025","","User Registration on LambdaTest eCommerce Playground","Successful registration with valid details",""
+"","16256","Login with credentials","","Mon Aug 18 21:49:30 IST 2025","passed","Mon Aug 18 21:49:46 IST 2025","","Login","Login with credentials",""
+"","15476","Successful registration with valid details","","Mon Aug 18 21:49:46 IST 2025","passed","Mon Aug 18 21:50:02 IST 2025","","User Registration on LambdaTest eCommerce Playground","Successful registration with valid details",""
