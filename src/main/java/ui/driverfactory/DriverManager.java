@@ -52,12 +52,27 @@ public class DriverManager {
     }
 
     private WebDriver createLocalDriver(BrowserType browserType) {
-        return switch (browserType) {
-            case CHROME -> new ChromeDriver(new ChromeOptions().addArguments("--start-maximized"));
-            case FIREFOX -> new FirefoxDriver(new FirefoxOptions().addArguments("--start-maximized"));
-            case SAFARI -> new SafariDriver(new SafariOptions());
-            case EDGE -> new EdgeDriver(new EdgeOptions().addArguments("--start-maximized"));
-        };
+        switch (browserType) {
+            case CHROME -> {
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis(), "--start-maximized");
+                return new ChromeDriver(options);
+            }
+            case FIREFOX -> {
+                FirefoxOptions options = new FirefoxOptions();
+                options.addArguments("--start-maximized");
+                return new FirefoxDriver(options);
+            }
+            case SAFARI -> {
+                return new SafariDriver(new SafariOptions());
+            }
+            case EDGE -> {
+                EdgeOptions options = new EdgeOptions();
+                options.addArguments("--start-maximized");
+                return new EdgeDriver(options);
+            }
+            default -> throw new IllegalArgumentException("Unsupported browser type: " + browserType);
+        }
     }
 
     private WebDriver createRemoteDriver(String provider) {
