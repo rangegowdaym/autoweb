@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Aug 21 20:12:23 GMT 2025","Thu Aug 21 20:12:36 GMT 2025","13456","","User Registration on LambdaTest eCommerce Playground","","Successful registration with valid details","","Successful registration with valid details",""
+"broken","Thu Aug 21 20:12:37 GMT 2025","Thu Aug 21 20:12:37 GMT 2025","0","Smoke_Suite","Smoke Test","runners.SmokeTestRunner","runners.SmokeTestRunner","afterSuite","afterSuite",""
+"broken","Thu Aug 21 20:12:23 GMT 2025","Thu Aug 21 20:12:36 GMT 2025","13447","","Login","","Login with credentials","","Login with credentials",""
+"broken","Thu Aug 21 20:12:36 GMT 2025","Thu Aug 21 20:12:36 GMT 2025","474","","User Registration on LambdaTest eCommerce Playground","","Successful registration with valid details","","Successful registration with valid details",""
