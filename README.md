@@ -13,7 +13,7 @@
 
 **Locally:**
 ```sh
-mvn clean test
+mvn clean test -Denv=dev -Dsuite=smokeSuite
 ```
 
 **Via Docker:**
